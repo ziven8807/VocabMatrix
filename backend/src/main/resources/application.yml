@@ -1,0 +1,113 @@
+spring:
+  # --- 資料庫連線配置 ---
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vocab_matrix_test
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  # --- 檔案上傳設定 (Servlet 容器級別) ---
+  servlet:
+    multipart:
+      max-file-size: 5MB        # 單一檔案最大 5MB (防止大檔案塞爆磁碟)
+      max-request-size: 5MB     # 單次請求總和最大 5MB
+
+  # --- JPA / Hibernate 配置 ---
+  jpa:
+    hibernate:
+      ddl-auto: none            # 不讓 Hibernate 自動修改資料庫結構 (生產環境必備，手動管 SQL)
+    show-sql: true              # 在控制台列印出執行的 SQL 語句 (除錯好用)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect # 指定資料庫方言為 PostgreSQL
+
+  # --- 郵件發送配置 (用於驗證信、重置密碼) ---
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}  # 這是 Gmail 的「應用程式密碼」
+    properties:
+      mail:
+        smtp:
+          auth: true            # 開啟身分驗證
+          starttls:
+            enable: true        # 開啟 TLS 加密傳輸
+            required: true
+
+  # --- Redis 快取配置 (用於儲存 Token 或臨時資料) ---
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+      database: 0               # 使用第 0 號資料庫
+      timeout: 5000ms           # 連線逾時設定
+
+  # --- OAuth2 第三方登入設定 ---
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            scope:
+              - openid          # 必備，用於標示為 OIDC
+              - email           # 讀取 Email
+              - profile         # 讀取基本資料(姓名、圖片)
+            client-name: Google
+          facebook:
+            client-id: ${FACEBOOK_CLIENT_ID}
+            client-secret: ${FACEBOOK_CLIENT_SECRET}
+            scope:
+              - email
+              - public_profile
+            client-name: Facebook
+
+# --- 檔案存儲自定義配置 (對應 FileStorageConfig.java) ---
+file:
+  upload:
+    dir: uploads/avatars/      # 實體檔案存放在專案根目錄的路徑
+
+# --- JWT 安全安全性配置 (自定義) ---
+security:
+  jwt:
+    # 簽名金鑰 (HS256 演算法使用)
+    access-secret: ${JWT_ACCESS_SECRET}
+    refresh-secret: ${JWT_REFRESH_SECRET}
+
+    # Token 有效期設定
+    access-token-expiration: 30m   # 短效 Access Token (30分鐘)
+    refresh-token-expiration: 30d  # 長效 Refresh Token (30天)
+
+    # JWT 標準欄位設定 (用於驗證 Token 來源)
+    issuer: "vocabmatrix-backend-service"
+    access-audience: "vocabmatrix-api"
+    refresh-audience: "vocabmatrix-auth"
+
+    # Cookie 相關設定 (用於儲存 Refresh Token)
+    refresh-token-cookie-name: "refresh_token"
+    refresh-token-cookie-path: "/"
+    cookie-secure: false        # 開發環境(http)設為 false，正式環境(https)需設為 true
+    cookie-same-site: "Lax"     # 防止 CSRF 攻擊的設定
+
+# --- 日誌層級配置 ---
+logging:
+  level:
+    org.springframework.security: DEBUG # 顯示 Security 相關日誌 (除錯 OAuth2 超級好用)
+    com.vocabmatrix.backend.config: DEBUG
+    com.vocabmatrix.backend.auth.filter: DEBUG
+
+# --- VocabMatrix 應用程式自定義業務配置 ---
+app:
+  backend-url: http://localhost:8080
+  frontend-url: http://localhost:3000
+
+  # Email 驗證連結有效期
+  email-verification:
+    token-validity-hours: 1
+
+  # 密碼重置連結有效期
+  password-reset:
+    token-validity-hours: 1
