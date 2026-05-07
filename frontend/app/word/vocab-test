@@ -1,0 +1,438 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { BookOpen, Clock, CheckCircle, RotateCcw } from "lucide-react";
+import api from "@/lib/axios";
+
+interface Word {
+  id: number;
+  word: string;
+  phonetic: string;
+  translation: string;
+  definition: string;
+}
+
+interface UserWordProgress {
+  id: number;
+  wordId: number;
+  word: string;
+  phonetic: string;
+  translation: string;
+  masteryLevel: "NEW" | "LEARNING" | "MASTERED" | "FORGOTTEN";
+  totalReviews: number;
+  correctCount: number;
+  wrongCount: number;
+  accuracyRate: number;
+  nextReviewAt: string;
+}
+
+interface LearningStats {
+  newWords: number;
+  learningWords: number;
+  masteredWords: number;
+  forgottenWords: number;
+  totalWords: number;
+}
+
+export default function VocabTestPage() {
+  const [currentView, setCurrentView] = useState<
+    "dashboard" | "learning" | "review"
+  >("dashboard");
+  const [stats, setStats] = useState<LearningStats | null>(null);
+  const [currentWord, setCurrentWord] = useState<Word | null>(null);
+  const [progress, setProgress] = useState<UserWordProgress[]>([]);
+  const [reviewWords, setReviewWords] = useState<UserWordProgress[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // 載入學習統計
+  const loadStats = async () => {
+    try {
+      const response = await api.get<LearningStats>("/words/progress/stats");
+      setStats(response.data);
+    } catch (err: any) {
+      console.error("Failed to load stats:", err);
+      setError(err.response?.data?.message || "Failed to load statistics");
+    }
+  };
+
+  // 載入學習進度
+  const loadProgress = async () => {
+    try {
+      const response = await api.get("/words/progress", {
+        params: { page: 0, size: 10 },
+      });
+      setProgress(response.data.content || []);
+    } catch (err: any) {
+      console.error("Failed to load progress:", err);
+    }
+  };
+
+  // 載入需要複習的單字
+  const loadReviewWords = async () => {
+    try {
+      const response = await api.get<UserWordProgress[]>(
+        "/words/progress/review",
+      );
+      setReviewWords(response.data);
+    } catch (err: any) {
+      console.error("Failed to load review words:", err);
+    }
+  };
+
+  // 載入一個隨機高頻單字
+  const loadRandomWord = async () => {
+    try {
+      setLoading(true);
+      const response = await api.get("/words/high-frequency", {
+        params: { minFrq: 4, page: 0, size: 50 },
+      });
+      const words = response.data.content || [];
+      if (words.length > 0) {
+        const randomIndex = Math.floor(Math.random() * words.length);
+        setCurrentWord(words[randomIndex]);
+      }
+    } catch (err: any) {
+      console.error("Failed to load word:", err);
+      setError("Failed to load word");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 標記單字
+  const markWord = async (
+    wordId: number,
+    masteryLevel: string,
+    isCorrect?: boolean,
+  ) => {
+    try {
+      setLoading(true);
+      await api.post("/words/progress/mark", {
+        wordId,
+        masteryLevel,
+        isCorrect,
+      });
+
+      // 重新載入統計
+      await loadStats();
+      await loadProgress();
+
+      // 載入下一個單字
+      if (currentView === "learning") {
+        await loadRandomWord();
+      }
+
+      setError(null);
+    } catch (err: any) {
+      console.error("Failed to mark word:", err);
+      setError(err.response?.data?.message || "Failed to mark word");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 初始化載入
+  useEffect(() => {
+    loadStats();
+    loadProgress();
+    loadReviewWords();
+  }, []);
+
+  // 儀表板視圖
+  const DashboardView = () => (
+    <div className="space-y-6">
+      {/* 統計卡片 */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <StatCard
+          title="新單字"
+          value={stats?.newWords || 0}
+          icon={<BookOpen className="w-5 h-5" />}
+          color="blue"
+        />
+        <StatCard
+          title="學習中"
+          value={stats?.learningWords || 0}
+          icon={<Clock className="w-5 h-5" />}
+          color="yellow"
+        />
+        <StatCard
+          title="已掌握"
+          value={stats?.masteredWords || 0}
+          icon={<CheckCircle className="w-5 h-5" />}
+          color="green"
+        />
+        <StatCard
+          title="需複習"
+          value={stats?.forgottenWords || 0}
+          icon={<RotateCcw className="w-5 h-5" />}
+          color="red"
+        />
+      </div>
+
+      {/* 快速行動 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <button
+          onClick={() => {
+            setCurrentView("learning");
+            loadRandomWord();
+          }}
+          className="bg-white border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50 rounded-lg p-6 text-left transition"
+        >
+          <h3 className="font-semibold text-gray-800 mb-1">開始學習新單字</h3>
+          <p className="text-sm text-gray-600">從高頻詞開始學習</p>
+        </button>
+
+        <button
+          onClick={() => setCurrentView("review")}
+          className="bg-white border-2 border-purple-200 hover:border-purple-400 hover:bg-purple-50 rounded-lg p-6 text-left transition"
+        >
+          <h3 className="font-semibold text-gray-800 mb-1">今日複習</h3>
+          <p className="text-sm text-gray-600">
+            {reviewWords.length} 個單字待複習
+          </p>
+        </button>
+      </div>
+
+      {/* 最近學習的單字 */}
+      {progress.length > 0 && (
+        <div className="bg-white rounded-xl shadow-lg p-6">
+          <h2 className="text-xl font-bold mb-4">最近學習的單字</h2>
+          <div className="space-y-3">
+            {progress.slice(0, 5).map((item) => (
+              <div key={item.id} className="border rounded-lg p-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-800">
+                      {item.word}
+                    </h3>
+                    <p className="text-sm text-gray-500">{item.phonetic}</p>
+                    <p className="text-gray-700 mt-1">{item.translation}</p>
+                  </div>
+                  <div className="text-right">
+                    <span
+                      className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
+                        item.masteryLevel === "MASTERED"
+                          ? "bg-green-100 text-green-700"
+                          : item.masteryLevel === "LEARNING"
+                          ? "bg-yellow-100 text-yellow-700"
+                          : "bg-gray-100 text-gray-700"
+                      }`}
+                    >
+                      {item.masteryLevel}
+                    </span>
+                    <p className="text-sm text-gray-500 mt-1">
+                      {item.accuracyRate ? `${item.accuracyRate}%` : "0%"}{" "}
+                      正確率
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  // 學習視圖
+  const LearningView = () => {
+    if (!currentWord) {
+      return (
+        <div className="text-center py-20">
+          <button
+            onClick={loadRandomWord}
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            載入單字
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <div className="max-w-2xl mx-auto">
+        <button
+          onClick={() => setCurrentView("dashboard")}
+          className="text-blue-600 mb-4 hover:underline"
+        >
+          ← 返回主頁
+        </button>
+
+        <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="text-center mb-8">
+            <h1 className="text-5xl font-bold text-gray-800 mb-2">
+              {currentWord.word}
+            </h1>
+            <p className="text-xl text-gray-500 mb-4">{currentWord.phonetic}</p>
+            <div className="bg-blue-50 rounded-lg p-4 inline-block">
+              <p className="text-lg text-gray-700">{currentWord.translation}</p>
+            </div>
+          </div>
+
+          {currentWord.definition && (
+            <div className="bg-purple-50 rounded-lg p-4 mb-6">
+              <p className="text-sm font-semibold text-purple-800 mb-2">
+                📝 英文定義
+              </p>
+              <p className="text-gray-700">{currentWord.definition}</p>
+            </div>
+          )}
+
+          <div className="flex gap-3">
+            <button
+              onClick={() => markWord(currentWord.id, "FORGOTTEN", false)}
+              disabled={loading}
+              className="flex-1 bg-red-100 text-red-700 py-3 rounded-lg font-semibold hover:bg-red-200 transition disabled:opacity-50"
+            >
+              😵 還不會
+            </button>
+            <button
+              onClick={() => markWord(currentWord.id, "LEARNING")}
+              disabled={loading}
+              className="flex-1 bg-yellow-100 text-yellow-700 py-3 rounded-lg font-semibold hover:bg-yellow-200 transition disabled:opacity-50"
+            >
+              🤔 有點印象
+            </button>
+            <button
+              onClick={() => markWord(currentWord.id, "MASTERED", true)}
+              disabled={loading}
+              className="flex-1 bg-green-100 text-green-700 py-3 rounded-lg font-semibold hover:bg-green-200 transition disabled:opacity-50"
+            >
+              ✅ 已掌握
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  // 複習視圖
+  const ReviewView = () => (
+    <div className="max-w-4xl mx-auto">
+      <button
+        onClick={() => setCurrentView("dashboard")}
+        className="text-blue-600 mb-4 hover:underline"
+      >
+        ← 返回主頁
+      </button>
+
+      <div className="bg-white rounded-xl shadow-lg p-6">
+        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+          <RotateCcw className="w-6 h-6 text-purple-600" />
+          需要複習的單字 ({reviewWords.length})
+        </h2>
+
+        {reviewWords.length === 0 ? (
+          <div className="text-center py-10 text-gray-500">
+            太棒了!目前沒有需要複習的單字 🎉
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {reviewWords.map((item) => (
+              <div
+                key={item.id}
+                className="border rounded-lg p-4 hover:bg-gray-50 transition"
+              >
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">
+                      {item.word}
+                    </h3>
+                    <p className="text-sm text-gray-500">{item.phonetic}</p>
+                    <p className="text-gray-700 mt-1">{item.translation}</p>
+                  </div>
+                  <div className="text-right">
+                    <div
+                      className={`text-sm font-semibold ${
+                        (item.accuracyRate || 0) >= 70
+                          ? "text-green-600"
+                          : (item.accuracyRate || 0) >= 50
+                          ? "text-yellow-600"
+                          : "text-red-600"
+                      }`}
+                    >
+                      {item.accuracyRate || 0}% 正確率
+                    </div>
+                    <p className="text-xs text-gray-500 mt-1">
+                      複習 {item.totalReviews} 次
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-4 md:p-8">
+      {/* 頂部導航 */}
+      <div className="max-w-6xl mx-auto mb-8">
+        <div className="bg-white rounded-xl shadow-sm p-4">
+          <div className="flex items-center gap-3">
+            <div className="bg-blue-600 text-white p-2 rounded-lg">
+              <BookOpen className="w-6 h-6" />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-gray-800">
+                VocabMatrix 測試
+              </h1>
+              <p className="text-xs text-gray-500">單字學習系統功能測試</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 錯誤訊息 */}
+      {error && (
+        <div className="max-w-6xl mx-auto mb-4">
+          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+            {error}
+          </div>
+        </div>
+      )}
+
+      {/* 主要內容 */}
+      <div className="max-w-6xl mx-auto">
+        {currentView === "dashboard" && <DashboardView />}
+        {currentView === "learning" && <LearningView />}
+        {currentView === "review" && <ReviewView />}
+      </div>
+    </div>
+  );
+}
+
+// 統計卡片組件
+function StatCard({
+  title,
+  value,
+  icon,
+  color,
+}: {
+  title: string;
+  value: number;
+  icon: React.ReactNode;
+  color: "blue" | "yellow" | "green" | "red";
+}) {
+  const colors = {
+    blue: "from-blue-500 to-blue-600",
+    yellow: "from-yellow-500 to-yellow-600",
+    green: "from-green-500 to-green-600",
+    red: "from-red-500 to-red-600",
+  };
+
+  return (
+    <div
+      className={`bg-gradient-to-br ${colors[color]} rounded-lg p-4 text-white`}
+    >
+      <div className="flex justify-between items-start mb-2">
+        <p className="text-sm opacity-90">{title}</p>
+        {icon}
+      </div>
+      <p className="text-3xl font-bold">{value}</p>
+    </div>
+  );
+}

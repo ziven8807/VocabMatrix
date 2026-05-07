@@ -1,0 +1,3513 @@
+{
+"words": [
+{
+"word": "individual"
+},
+{
+"word": "authority"
+},
+{
+"word": "stakeholder"
+},
+{
+"word": "counterpart"
+},
+{
+"word": "population"
+},
+{
+"word": "community"
+},
+{
+"word": "generation"
+},
+{
+"word": "facility"
+},
+{
+"word": "institution"
+},
+{
+"word": "laboratory"
+},
+{
+"word": "sector"
+},
+{
+"word": "area"
+},
+{
+"word": "field"
+},
+{
+"word": "domain"
+},
+{
+"word": "resource"
+},
+{
+"word": "support"
+},
+{
+"word": "funding"
+},
+{
+"word": "investment"
+},
+{
+"word": "infrastructure"
+},
+{
+"word": "opportunity"
+},
+{
+"word": "access"
+},
+{
+"word": "argument"
+},
+{
+"word": "claim"
+},
+{
+"word": "evidence"
+},
+{
+"word": "viewpoint"
+},
+{
+"word": "perspective"
+},
+{
+"word": "assumption"
+},
+{
+"word": "implication"
+},
+{
+"word": "factor"
+},
+{
+"word": "root"
+},
+{
+"word": "basis"
+},
+{
+"word": "issue"
+},
+{
+"word": "concern"
+},
+{
+"word": "impact"
+},
+{
+"word": "effect"
+},
+{
+"word": "consequence"
+},
+{
+"word": "value"
+},
+{
+"word": "attitude"
+},
+{
+"word": "belief"
+},
+{
+"word": "priority"
+},
+{
+"word": "benefit"
+},
+{
+"word": "drawback"
+},
+{
+"word": "advantage"
+},
+{
+"word": "disadvantage"
+},
+{
+"word": "trend"
+},
+{
+"word": "phenomenon"
+},
+{
+"word": "plight"
+},
+{
+"word": "predicament"
+},
+{
+"word": "challenge"
+},
+{
+"word": "burden"
+},
+{
+"word": "situation"
+},
+{
+"word": "circumstance"
+},
+{
+"word": "condition"
+},
+{
+"word": "context"
+},
+{
+"word": "awareness"
+},
+{
+"word": "aspect"
+},
+{
+"word": "feature"
+},
+{
+"word": "characteristic"
+},
+{
+"word": "extent"
+},
+{
+"word": "scale"
+},
+{
+"word": "scope"
+},
+{
+"word": "degree"
+},
+{
+"word": "norm"
+},
+{
+"word": "shift"
+},
+{
+"word": "pace"
+},
+{
+"word": "gap"
+},
+{
+"word": "equality"
+},
+{
+"word": "inequality"
+},
+{
+"word": "approach"
+},
+{
+"word": "framework"
+},
+{
+"word": "strategy"
+},
+{
+"word": "policy"
+},
+{
+"word": "regulation"
+},
+{
+"word": "incentive"
+},
+{
+"word": "solution"
+},
+{
+"word": "measure"
+},
+{
+"word": "initiative"
+},
+{
+"word": "effort"
+},
+{
+"word": "attempt"
+},
+{
+"word": "stance"
+},
+{
+"word": "position"
+},
+{
+"word": "notion"
+},
+{
+"word": "idea"
+},
+{
+"word": "consensus"
+},
+{
+"word": "controversy"
+},
+{
+"word": "accountability"
+},
+{
+"word": "enhance"
+},
+{
+"word": "undermine"
+},
+{
+"word": "improve"
+},
+{
+"word": "worsen"
+},
+{
+"word": "facilitate"
+},
+{
+"word": "impede"
+},
+{
+"word": "strengthen"
+},
+{
+"word": "weaken"
+},
+{
+"word": "acquire"
+},
+{
+"word": "obtain"
+},
+{
+"word": "gain"
+},
+{
+"word": "apply"
+},
+{
+"word": "utilize"
+},
+{
+"word": "implement"
+},
+{
+"word": "practice"
+},
+{
+"word": "develop"
+},
+{
+"word": "establish"
+},
+{
+"word": "assess"
+},
+{
+"word": "evaluate"
+},
+{
+"word": "monitor"
+},
+{
+"word": "influence"
+},
+{
+"word": "affect"
+},
+{
+"word": "shape"
+},
+{
+"word": "determine"
+},
+{
+"word": "contribute to"
+},
+{
+"word": "lead to"
+},
+{
+"word": "result in"
+},
+{
+"word": "jeopardize"
+},
+{
+"word": "threaten"
+},
+{
+"word": "harm"
+},
+{
+"word": "damage"
+},
+{
+"word": "transform"
+},
+{
+"word": "reshape"
+},
+{
+"word": "integrate"
+},
+{
+"word": "argue"
+},
+{
+"word": "suggest"
+},
+{
+"word": "indicate"
+},
+{
+"word": "highlight"
+},
+{
+"word": "address"
+},
+{
+"word": "emphasize"
+},
+{
+"word": "interesting"
+},
+{
+"word": "boring"
+},
+{
+"word": "intriguing"
+},
+{
+"word": "unremarkable"
+},
+{
+"word": "engaging"
+},
+{
+"word": "disengaging"
+},
+{
+"word": "varied"
+},
+{
+"word": "monotonous"
+},
+{
+"word": "stimulating"
+},
+{
+"word": "enriching"
+},
+{
+"word": "meaningful"
+},
+{
+"word": "meaningless"
+},
+{
+"word": "inspiring"
+},
+{
+"word": "uninspiring"
+},
+{
+"word": "effortless"
+},
+{
+"word": "tedious"
+},
+{
+"word": "calming"
+},
+{
+"word": "stressful"
+},
+{
+"word": "refreshing"
+},
+{
+"word": "draining"
+},
+{
+"word": "energizing"
+},
+{
+"word": "exhausting"
+},
+{
+"word": "confident"
+},
+{
+"word": "nervous"
+},
+{
+"word": "optimistic"
+},
+{
+"word": "pessimistic"
+},
+{
+"word": "motivated"
+},
+{
+"word": "demotivated"
+},
+{
+"word": "efficient"
+},
+{
+"word": "inefficient"
+},
+{
+"word": "productive"
+},
+{
+"word": "unproductive"
+},
+{
+"word": "far-reaching"
+},
+{
+"word": "narrow"
+},
+{
+"word": "adequate"
+},
+{
+"word": "inadequate"
+},
+{
+"word": "comprehensive"
+},
+{
+"word": "incomplete"
+},
+{
+"word": "effective"
+},
+{
+"word": "ineffective"
+},
+{
+"word": "consistent"
+},
+{
+"word": "inconsistent"
+},
+{
+"word": "stable"
+},
+{
+"word": "unstable"
+},
+{
+"word": "reliable"
+},
+{
+"word": "unreliable"
+},
+{
+"word": "sustainable"
+},
+{
+"word": "unsustainable"
+},
+{
+"word": "relevant"
+},
+{
+"word": "irrelevant"
+},
+{
+"word": "compatible"
+},
+{
+"word": "incompatible"
+},
+{
+"word": "complementary"
+},
+{
+"word": "contradictory"
+},
+{
+"word": "intrinsic"
+},
+{
+"word": "extrinsic"
+},
+{
+"word": "simple"
+},
+{
+"word": "complex"
+},
+{
+"word": "manageable"
+},
+{
+"word": "overwhelming"
+},
+{
+"word": "permanent"
+},
+{
+"word": "temporary"
+},
+{
+"word": "long-term"
+},
+{
+"word": "short-term"
+},
+{
+"word": "advantageous"
+},
+{
+"word": "disadvantageous"
+},
+{
+"word": "beneficial"
+},
+{
+"word": "harmful"
+},
+{
+"word": "valuable"
+},
+{
+"word": "worthless"
+},
+{
+"word": "indispensable"
+},
+{
+"word": "redundant"
+},
+{
+"word": "practical"
+},
+{
+"word": "impractical"
+},
+{
+"word": "feasible"
+},
+{
+"word": "unfeasible"
+},
+{
+"word": "objective"
+},
+{
+"word": "subjective"
+},
+{
+"word": "rational"
+},
+{
+"word": "irrational"
+},
+{
+"word": "justified"
+},
+{
+"word": "unjustified"
+},
+{
+"word": "controversial"
+},
+{
+"word": "uncontroversial"
+},
+{
+"word": "prevalent"
+},
+{
+"word": "rare"
+},
+{
+"word": "impartial"
+},
+{
+"word": "biased"
+},
+{
+"word": "worthwhile"
+},
+{
+"word": "pointless"
+},
+{
+"word": "rewarding"
+},
+{
+"word": "unrewarding"
+},
+{
+"word": "important"
+},
+{
+"word": "unimportant"
+},
+{
+"word": "significant"
+},
+{
+"word": "insignificant"
+},
+{
+"word": "crucial"
+},
+{
+"word": "vital"
+},
+{
+"word": "dispensable"
+},
+{
+"word": "mild"
+},
+{
+"word": "severe"
+},
+{
+"word": "profound"
+},
+{
+"word": "superficial"
+},
+{
+"word": "flexible"
+},
+{
+"word": "rigid"
+},
+{
+"word": "structured"
+},
+{
+"word": "chaotic"
+}
+],
+"word_definitions": [
+{
+"word": "individual",
+"pos": "n.",
+"definition_en": "a single human being considered separately from a group",
+"definition_cn": "個人",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "authority",
+"pos": "n.",
+"definition_en": "a person or organization with official power to make decisions or enforce rules",
+"definition_cn": "當局；權威",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "stakeholder",
+"pos": "n.",
+"definition_en": "a person or group with an interest or concern in a particular matter or organization",
+"definition_cn": "利害關係人",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "counterpart",
+"pos": "n.",
+"definition_en": "a person or thing that holds the same position or performs the same function as another in a different context",
+"definition_cn": "對應的人或物",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "population",
+"pos": "n.",
+"definition_en": "all the people living in a particular area or belonging to a particular group",
+"definition_cn": "人口；群體",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "community",
+"pos": "n.",
+"definition_en": "a group of people living in the same area or sharing common interests, values, or characteristics",
+"definition_cn": "社群；社區",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "generation",
+"pos": "n.",
+"definition_en": "all the people born and living at about the same time, regarded collectively",
+"definition_cn": "世代",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "facility",
+"pos": "n.",
+"definition_en": "a place, building, or piece of equipment provided for a particular purpose",
+"definition_cn": "設施；場所",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "institution",
+"pos": "n.",
+"definition_en": "an established organization, especially one with a social, educational, or governmental purpose",
+"definition_cn": "機構；制度",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "laboratory",
+"pos": "n.",
+"definition_en": "a room or building equipped for scientific research, experiments, or testing",
+"definition_cn": "實驗室",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "sector",
+"pos": "n.",
+"definition_en": "a distinct part or branch of a society, economy, or field of activity",
+"definition_cn": "部門；領域",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "area",
+"pos": "n.",
+"definition_en": "a subject, topic, or range of activity regarded as a distinct division",
+"definition_cn": "領域；範疇",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "field",
+"pos": "n.",
+"definition_en": "a particular branch of study, knowledge, or professional activity",
+"definition_cn": "領域；專業",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "domain",
+"pos": "n.",
+"definition_en": "a sphere of knowledge, influence, or activity",
+"definition_cn": "範疇；領域",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "resource",
+"pos": "n.",
+"definition_en": "a stock or supply of materials, money, or other assets that can be drawn on when needed",
+"definition_cn": "資源",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "support",
+"pos": "n.",
+"definition_en": "assistance, encouragement, or backing given to someone or something",
+"definition_cn": "支持；援助",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "funding",
+"pos": "n.",
+"definition_en": "money provided by an organization or government for a particular purpose",
+"definition_cn": "資金；經費",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "investment",
+"pos": "n.",
+"definition_en": "the action of allocating money, time, or resources with the expectation of future benefit",
+"definition_cn": "投資",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "infrastructure",
+"pos": "n.",
+"definition_en": "the basic physical and organizational structures needed for the operation of a society or enterprise",
+"definition_cn": "基礎建設",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "opportunity",
+"pos": "n.",
+"definition_en": "a set of circumstances that makes it possible to do or achieve something",
+"definition_cn": "機會",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "access",
+"pos": "n.",
+"definition_en": "the ability or right to approach, enter, or make use of something",
+"definition_cn": "取得機會；使用權",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "argument",
+"pos": "n.",
+"definition_en": "a reason or set of reasons given to support a position or conclusion",
+"definition_cn": "論點；論據",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "claim",
+"pos": "n.",
+"definition_en": "an assertion that something is true, typically without proof being offered",
+"definition_cn": "主張；聲稱",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "evidence",
+"pos": "n.",
+"definition_en": "facts, data, or information used to support or prove a claim",
+"definition_cn": "證據；依據",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "viewpoint",
+"pos": "n.",
+"definition_en": "a particular attitude or way of considering a matter",
+"definition_cn": "觀點；看法",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "perspective",
+"pos": "n.",
+"definition_en": "a particular way of thinking about or understanding something, shaped by one's experience or position",
+"definition_cn": "視角；觀點",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "assumption",
+"pos": "n.",
+"definition_en": "something taken for granted or accepted as true without proof",
+"definition_cn": "假設；前提",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "implication",
+"pos": "n.",
+"definition_en": "a conclusion or consequence that can be drawn from something, though not explicitly stated",
+"definition_cn": "含意；暗示",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "factor",
+"pos": "n.",
+"definition_en": "a circumstance, fact, or influence that contributes to a result or outcome",
+"definition_cn": "因素；要素",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "root",
+"pos": "n.",
+"definition_en": "the fundamental cause or origin of a problem or situation",
+"definition_cn": "根源；根本原因",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "basis",
+"pos": "n.",
+"definition_en": "the underlying support, foundation, or principle for an idea or argument",
+"definition_cn": "基礎；依據",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "issue",
+"pos": "n.",
+"definition_en": "an important topic or problem that is being discussed or debated",
+"definition_cn": "議題；問題",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "concern",
+"pos": "n.",
+"definition_en": "a matter regarded as important or causing worry",
+"definition_cn": "關切；憂慮",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "impact",
+"pos": "n.",
+"definition_en": "a marked effect or influence that something has on a situation or person",
+"definition_cn": "影響；衝擊",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "effect",
+"pos": "n.",
+"definition_en": "a change that is caused by or results from an action or event",
+"definition_cn": "效果；結果",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "consequence",
+"pos": "n.",
+"definition_en": "a result or outcome, especially a negative one, that follows from an action or condition",
+"definition_cn": "後果；結果",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "value",
+"pos": "n.",
+"definition_en": "a principle or standard of behavior regarded as important or desirable in a society",
+"definition_cn": "價值觀；準則",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "attitude",
+"pos": "n.",
+"definition_en": "a settled way of thinking or feeling about something, reflected in behavior",
+"definition_cn": "態度；看法",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "belief",
+"pos": "n.",
+"definition_en": "something accepted as true, especially a principle or value held by a person or group",
+"definition_cn": "信念；信仰",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "priority",
+"pos": "n.",
+"definition_en": "something regarded as more important than other things and dealt with first",
+"definition_cn": "優先事項",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "benefit",
+"pos": "n.",
+"definition_en": "an advantage or positive outcome gained from something",
+"definition_cn": "好處；利益",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "drawback",
+"pos": "n.",
+"definition_en": "a disadvantage or problem that makes something less acceptable or effective",
+"definition_cn": "缺點；不利因素",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "advantage",
+"pos": "n.",
+"definition_en": "a condition or circumstance that puts one in a favorable position over others",
+"definition_cn": "優勢；有利條件",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "disadvantage",
+"pos": "n.",
+"definition_en": "an unfavorable condition or circumstance that reduces the chances of success",
+"definition_cn": "劣勢；不利條件",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "trend",
+"pos": "n.",
+"definition_en": "a general direction in which something is developing or changing over time",
+"definition_cn": "趨勢；走向",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "phenomenon",
+"pos": "n.",
+"definition_en": "a fact, event, or situation that is observed to exist or happen, especially one whose cause is under examination",
+"definition_cn": "現象",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "plight",
+"pos": "n.",
+"definition_en": "a difficult, dangerous, or unfortunate situation",
+"definition_cn": "困境；苦況",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "predicament",
+"pos": "n.",
+"definition_en": "a difficult, unpleasant, or embarrassing situation that is hard to escape from",
+"definition_cn": "窘境；進退兩難",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "challenge",
+"pos": "n.",
+"definition_en": "a demanding or difficult task or situation that requires effort and skill to overcome",
+"definition_cn": "挑戰；難題",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "burden",
+"pos": "n.",
+"definition_en": "something heavy, difficult, or oppressive that someone has to bear or deal with",
+"definition_cn": "負擔；重擔",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "situation",
+"pos": "n.",
+"definition_en": "a set of circumstances in which someone finds themselves at a particular time",
+"definition_cn": "情況；處境",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "circumstance",
+"pos": "n.",
+"definition_en": "a fact or condition connected with or relevant to an event or action",
+"definition_cn": "情況；環境因素",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "condition",
+"pos": "n.",
+"definition_en": "the state of affairs or environment in which something exists or occurs",
+"definition_cn": "狀況；條件",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "context",
+"pos": "n.",
+"definition_en": "the circumstances or background that form the setting for an event or idea, helping to explain it",
+"definition_cn": "脈絡；背景",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "awareness",
+"pos": "n.",
+"definition_en": "knowledge or perception of a situation, fact, or issue",
+"definition_cn": "意識；認知",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "aspect",
+"pos": "n.",
+"definition_en": "a particular part, feature, or dimension of something being considered",
+"definition_cn": "面向；方面",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "feature",
+"pos": "n.",
+"definition_en": "a distinctive attribute or characteristic of something",
+"definition_cn": "特點；特徵",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "characteristic",
+"pos": "n.",
+"definition_en": "a quality or trait that is typical of or distinctive to a person, place, or thing",
+"definition_cn": "特性；特質",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "extent",
+"pos": "n.",
+"definition_en": "the degree to which something is the case, or the range over which something applies",
+"definition_cn": "程度；範圍",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "scale",
+"pos": "n.",
+"definition_en": "the relative size, level, or scope of something",
+"definition_cn": "規模；尺度",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "scope",
+"pos": "n.",
+"definition_en": "the range of subjects, topics, or activities covered or dealt with",
+"definition_cn": "範疇；涵蓋範圍",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "degree",
+"pos": "n.",
+"definition_en": "the amount, level, or extent to which something is present or applies",
+"definition_cn": "程度；度數",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "norm",
+"pos": "n.",
+"definition_en": "a standard or pattern of behavior considered typical or expected within a society or group",
+"definition_cn": "規範；常態",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "shift",
+"pos": "n.",
+"definition_en": "a significant change in attitude, direction, or focus",
+"definition_cn": "轉變；移轉",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "pace",
+"pos": "n.",
+"definition_en": "the speed or rate at which something happens or develops",
+"definition_cn": "步調；速度",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "gap",
+"pos": "n.",
+"definition_en": "a difference or disparity between two things, groups, or situations",
+"definition_cn": "差距；落差",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "equality",
+"pos": "n.",
+"definition_en": "the state of being equal in status, rights, or opportunities",
+"definition_cn": "平等；均等",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "inequality",
+"pos": "n.",
+"definition_en": "the unequal distribution of resources, opportunities, or rights among people or groups",
+"definition_cn": "不平等；不均",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "approach",
+"pos": "n.",
+"definition_en": "a way of dealing with a situation or problem",
+"definition_cn": "方法；途徑",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "framework",
+"pos": "n.",
+"definition_en": "a basic structure or set of principles used as a guide for dealing with a problem or situation",
+"definition_cn": "框架；架構",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "strategy",
+"pos": "n.",
+"definition_en": "a plan of action designed to achieve a long-term or overall goal",
+"definition_cn": "策略；戰略",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "policy",
+"pos": "n.",
+"definition_en": "a course of action or set of principles adopted by a government, organization, or individual",
+"definition_cn": "政策；方針",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "regulation",
+"pos": "n.",
+"definition_en": "a rule or directive made and maintained by an authority to control conduct or activity",
+"definition_cn": "規定；法規",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "incentive",
+"pos": "n.",
+"definition_en": "something that motivates or encourages someone to take a particular action",
+"definition_cn": "誘因；激勵",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "solution",
+"pos": "n.",
+"definition_en": "a means of solving a problem or dealing with a difficult situation",
+"definition_cn": "解決方法",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "measure",
+"pos": "n.",
+"definition_en": "an action taken to achieve a desired result, especially to address a problem",
+"definition_cn": "措施；手段",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "initiative",
+"pos": "n.",
+"definition_en": "a new plan or action intended to solve a problem or improve a situation",
+"definition_cn": "倡議；新方案",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "effort",
+"pos": "n.",
+"definition_en": "a vigorous or determined attempt to do or achieve something",
+"definition_cn": "努力；付出",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "attempt",
+"pos": "n.",
+"definition_en": "an act of trying to achieve something, especially without clear success",
+"definition_cn": "嘗試；試圖",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "stance",
+"pos": "n.",
+"definition_en": "an attitude or position taken on a particular issue",
+"definition_cn": "立場；態度",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "position",
+"pos": "n.",
+"definition_en": "a point of view or attitude adopted toward a particular topic or question",
+"definition_cn": "立場；觀點",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "notion",
+"pos": "n.",
+"definition_en": "a general idea or belief about something",
+"definition_cn": "概念；想法",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "idea",
+"pos": "n.",
+"definition_en": "a thought or suggestion about a possible course of action or explanation",
+"definition_cn": "想法；概念",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "consensus",
+"pos": "n.",
+"definition_en": "a general agreement reached by a group as a whole",
+"definition_cn": "共識",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "controversy",
+"pos": "n.",
+"definition_en": "prolonged public disagreement or heated debate about a matter of opinion",
+"definition_cn": "爭議；論戰",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "accountability",
+"pos": "n.",
+"definition_en": "the obligation of an individual or organization to accept responsibility for its actions",
+"definition_cn": "問責；責任歸屬",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "enhance",
+"pos": "v.",
+"definition_en": "to increase or improve the quality, value, or extent of something",
+"definition_cn": "提升；增強",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "undermine",
+"pos": "v.",
+"definition_en": "to weaken or damage something gradually, especially its effectiveness or foundation",
+"definition_cn": "削弱；破壞",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "improve",
+"pos": "v.",
+"definition_en": "to make or become better in quality, condition, or performance",
+"definition_cn": "改善；提升",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "worsen",
+"pos": "v.",
+"definition_en": "to make or become worse in condition, quality, or severity",
+"definition_cn": "惡化；使變差",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "facilitate",
+"pos": "v.",
+"definition_en": "to make an action, process, or outcome easier or more likely to happen",
+"definition_cn": "促進；使便利",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "impede",
+"pos": "v.",
+"definition_en": "to delay or prevent something by obstructing or hindering its progress",
+"definition_cn": "阻礙；妨礙",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "strengthen",
+"pos": "v.",
+"definition_en": "to make or become stronger, more powerful, or more effective",
+"definition_cn": "加強；鞏固",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "weaken",
+"pos": "v.",
+"definition_en": "to make or become less strong, effective, or resistant",
+"definition_cn": "削弱；減弱",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "acquire",
+"pos": "v.",
+"definition_en": "to gain or obtain something, especially through effort or experience",
+"definition_cn": "獲得；習得",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "obtain",
+"pos": "v.",
+"definition_en": "to get or secure something, especially through deliberate effort",
+"definition_cn": "取得；獲得",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "gain",
+"pos": "v.",
+"definition_en": "to obtain or achieve something desirable or beneficial",
+"definition_cn": "獲得；得到",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "apply",
+"pos": "v.",
+"definition_en": "to put a skill, method, or piece of knowledge into practice in a specific context",
+"definition_cn": "應用；運用",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "utilize",
+"pos": "v.",
+"definition_en": "to make practical or effective use of something",
+"definition_cn": "利用；善用",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "implement",
+"pos": "v.",
+"definition_en": "to put a plan, policy, or decision into effect",
+"definition_cn": "執行；實施",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "practice",
+"pos": "v.",
+"definition_en": "to carry out or apply something habitually or repeatedly",
+"definition_cn": "實踐；執行",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "develop",
+"pos": "v.",
+"definition_en": "to grow, advance, or bring something into a more complete or effective form",
+"definition_cn": "發展；建立",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "establish",
+"pos": "v.",
+"definition_en": "to set up or create something on a firm or permanent basis",
+"definition_cn": "建立；確立",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "assess",
+"pos": "v.",
+"definition_en": "to evaluate or estimate the nature, quality, or importance of something",
+"definition_cn": "評估；評量",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "evaluate",
+"pos": "v.",
+"definition_en": "to judge or determine the significance, quality, or condition of something through careful study",
+"definition_cn": "評估；評鑑",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "measure",
+"pos": "v.",
+"definition_en": "to assess the extent, quality, or effect of something using a set standard or method",
+"definition_cn": "衡量；測量",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "monitor",
+"pos": "v.",
+"definition_en": "to observe and check the progress or quality of something over a period of time",
+"definition_cn": "監測；追蹤",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "influence",
+"pos": "v.",
+"definition_en": "to have an effect on the character, development, or behavior of someone or something",
+"definition_cn": "影響；左右",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "affect",
+"pos": "v.",
+"definition_en": "to have an impact on or make a difference to someone or something",
+"definition_cn": "影響；作用於",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "shape",
+"pos": "v.",
+"definition_en": "to influence the nature, development, or direction of something",
+"definition_cn": "形塑；影響",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "determine",
+"pos": "v.",
+"definition_en": "to cause or be the decisive factor in bringing about a particular outcome",
+"definition_cn": "決定；左右",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "contribute to",
+"pos": "phrase",
+"definition_en": "to be one of the causes or factors that help produce a result or situation",
+"definition_cn": "促成；貢獻於",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "lead to",
+"pos": "phrase",
+"definition_en": "to result in or cause a particular outcome or situation",
+"definition_cn": "導致；引發",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "result in",
+"pos": "phrase",
+"definition_en": "to have a particular outcome or consequence as an end product",
+"definition_cn": "造成；導致",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "jeopardize",
+"pos": "v.",
+"definition_en": "to put something at risk of being harmed, lost, or destroyed",
+"definition_cn": "危及；使陷入危險",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "threaten",
+"pos": "v.",
+"definition_en": "to pose a danger or risk to someone or something",
+"definition_cn": "威脅；危害",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "harm",
+"pos": "v.",
+"definition_en": "to cause physical or other damage or injury to someone or something",
+"definition_cn": "傷害；損害",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "damage",
+"pos": "v.",
+"definition_en": "to cause physical harm or impairment to something, reducing its value or effectiveness",
+"definition_cn": "損害；破壞",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "transform",
+"pos": "v.",
+"definition_en": "to change something completely in form, nature, or appearance",
+"definition_cn": "轉變；改造",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "reshape",
+"pos": "v.",
+"definition_en": "to change the structure, nature, or direction of something significantly",
+"definition_cn": "重塑；改變形態",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "integrate",
+"pos": "v.",
+"definition_en": "to combine or incorporate parts into a whole so that they function together effectively",
+"definition_cn": "整合；融合",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "argue",
+"pos": "v.",
+"definition_en": "to give reasons or evidence in support of an idea, action, or position",
+"definition_cn": "論證；主張",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "suggest",
+"pos": "v.",
+"definition_en": "to put forward an idea or possibility for consideration",
+"definition_cn": "表明；暗示",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "indicate",
+"pos": "v.",
+"definition_en": "to point to or show that something is the case",
+"definition_cn": "顯示；指出",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "highlight",
+"pos": "v.",
+"definition_en": "to draw attention to or emphasize something as particularly important",
+"definition_cn": "強調；凸顯",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "address",
+"pos": "v.",
+"definition_en": "to think about and deal with a problem or issue",
+"definition_cn": "處理；論及",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "emphasize",
+"pos": "v.",
+"definition_en": "to give special importance or prominence to something in speech or writing",
+"definition_cn": "強調；著重",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "interesting",
+"pos": "adj.",
+"definition_en": "arousing curiosity or attention; holding one's interest",
+"definition_cn": "有趣的；引人注意的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "boring",
+"pos": "adj.",
+"definition_en": "not interesting; causing one to feel weary and impatient",
+"definition_cn": "無聊的；乏味的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "intriguing",
+"pos": "adj.",
+"definition_en": "arousing great curiosity or interest in a mysterious or complex way",
+"definition_cn": "引人入勝的；耐人尋味的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "unremarkable",
+"pos": "adj.",
+"definition_en": "not particularly interesting, striking, or noteworthy",
+"definition_cn": "平淡無奇的；不顯眼的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "engaging",
+"pos": "adj.",
+"definition_en": "charming, interesting, and attracting attention or participation",
+"definition_cn": "吸引人的；引人投入的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "disengaging",
+"pos": "adj.",
+"definition_en": "failing to hold attention or encourage involvement",
+"definition_cn": "令人失去興趣的；使人疏離的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "varied",
+"pos": "adj.",
+"definition_en": "incorporating a range of different types or elements; diverse",
+"definition_cn": "多樣的；豐富的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "monotonous",
+"pos": "adj.",
+"definition_en": "dull and tedious due to lack of variety or change",
+"definition_cn": "單調的；一成不變的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "stimulating",
+"pos": "adj.",
+"definition_en": "encouraging interest, enthusiasm, or further thought or activity",
+"definition_cn": "刺激的；啟發性的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "enriching",
+"pos": "adj.",
+"definition_en": "improving or enhancing the quality of one's life, knowledge, or experience",
+"definition_cn": "充實的；豐富人生的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "meaningful",
+"pos": "adj.",
+"definition_en": "having a serious, important, or purposeful quality worth caring about",
+"definition_cn": "有意義的；有價值的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "meaningless",
+"pos": "adj.",
+"definition_en": "lacking purpose, significance, or value",
+"definition_cn": "無意義的；空洞的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "inspiring",
+"pos": "adj.",
+"definition_en": "producing a feeling of enthusiasm, motivation, or admiration",
+"definition_cn": "鼓舞人心的；激勵的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "uninspiring",
+"pos": "adj.",
+"definition_en": "failing to produce enthusiasm, excitement, or motivation",
+"definition_cn": "乏善可陳的；不激勵人心的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "effortless",
+"pos": "adj.",
+"definition_en": "requiring little or no effort; achieved with ease",
+"definition_cn": "輕鬆的；毫不費力的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "tedious",
+"pos": "adj.",
+"definition_en": "too long, slow, or dull; requiring more time and patience than is comfortable",
+"definition_cn": "乏味的；冗長的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "calming",
+"pos": "adj.",
+"definition_en": "having a soothing effect that reduces anxiety or agitation",
+"definition_cn": "令人平靜的；安撫的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "stressful",
+"pos": "adj.",
+"definition_en": "causing mental or emotional strain or tension",
+"definition_cn": "壓力大的；令人緊張的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "refreshing",
+"pos": "adj.",
+"definition_en": "pleasantly new or different, making one feel revitalized",
+"definition_cn": "令人耳目一新的；提神的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "draining",
+"pos": "adj.",
+"definition_en": "causing one to feel very tired or depleted of energy",
+"definition_cn": "耗盡精力的；令人身心俱疲的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "energizing",
+"pos": "adj.",
+"definition_en": "giving one a feeling of energy, vitality, or enthusiasm",
+"definition_cn": "令人充滿活力的；振奮的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "exhausting",
+"pos": "adj.",
+"definition_en": "making one feel completely drained of energy or resources",
+"definition_cn": "令人精疲力竭的；消耗殆盡的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "confident",
+"pos": "adj.",
+"definition_en": "feeling or showing certainty about one's abilities or the outcome of a situation",
+"definition_cn": "有自信的；確信的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "nervous",
+"pos": "adj.",
+"definition_en": "feeling anxious or apprehensive about an uncertain outcome",
+"definition_cn": "緊張的；焦慮的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "optimistic",
+"pos": "adj.",
+"definition_en": "having a tendency to expect the best possible outcome",
+"definition_cn": "樂觀的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "pessimistic",
+"pos": "adj.",
+"definition_en": "tending to see the worst aspect of things or expect the worst outcome",
+"definition_cn": "悲觀的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "motivated",
+"pos": "adj.",
+"definition_en": "having a strong desire or drive to achieve or accomplish something",
+"definition_cn": "有動力的；積極的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "demotivated",
+"pos": "adj.",
+"definition_en": "lacking enthusiasm or drive, often due to repeated failure or disengagement",
+"definition_cn": "失去動力的；消極的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "efficient",
+"pos": "adj.",
+"definition_en": "achieving maximum output with minimum wasted effort, time, or resources",
+"definition_cn": "有效率的；高效的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "inefficient",
+"pos": "adj.",
+"definition_en": "failing to make the best use of time, effort, or resources",
+"definition_cn": "低效的；沒有效率的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "productive",
+"pos": "adj.",
+"definition_en": "producing or achieving a significant amount of results or output",
+"definition_cn": "有成效的；富有成果的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "unproductive",
+"pos": "adj.",
+"definition_en": "not producing desired results or achieving little of value",
+"definition_cn": "無成效的；徒勞的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "far-reaching",
+"pos": "adj.",
+"definition_en": "having a wide range of influence, effect, or application",
+"definition_cn": "深遠的；廣泛的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "narrow",
+"pos": "adj.",
+"definition_en": "limited in range, scope, or extent",
+"definition_cn": "狹隘的；有限的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "adequate",
+"pos": "adj.",
+"definition_en": "satisfactory or acceptable in quality or quantity for a particular purpose",
+"definition_cn": "足夠的；適當的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "inadequate",
+"pos": "adj.",
+"definition_en": "lacking the quality or quantity required; not sufficient for a purpose",
+"definition_cn": "不足的；不夠的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "comprehensive",
+"pos": "adj.",
+"definition_en": "covering or including all or nearly all elements or aspects of something",
+"definition_cn": "全面的；綜合的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "incomplete",
+"pos": "adj.",
+"definition_en": "not having all the necessary or appropriate parts; not finished",
+"definition_cn": "不完整的；未完成的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "effective",
+"pos": "adj.",
+"definition_en": "successful in producing the desired result or outcome",
+"definition_cn": "有效的；奏效的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "ineffective",
+"pos": "adj.",
+"definition_en": "failing to produce the intended or desired result",
+"definition_cn": "無效的；不奏效的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "consistent",
+"pos": "adj.",
+"definition_en": "acting or done in the same way over time; not contradicting itself",
+"definition_cn": "一致的；穩定的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "inconsistent",
+"pos": "adj.",
+"definition_en": "not staying the same throughout; having contradictory elements",
+"definition_cn": "不一致的；矛盾的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "stable",
+"pos": "adj.",
+"definition_en": "not likely to change, fail, or give way; firmly established",
+"definition_cn": "穩定的；牢固的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "unstable",
+"pos": "adj.",
+"definition_en": "prone to change, failure, or collapse; not firmly established",
+"definition_cn": "不穩定的；動盪的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "reliable",
+"pos": "adj.",
+"definition_en": "consistently good in quality or performance; able to be trusted",
+"definition_cn": "可靠的；值得信賴的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "unreliable",
+"pos": "adj.",
+"definition_en": "not able to be trusted or depended on; inconsistent in quality or performance",
+"definition_cn": "不可靠的；靠不住的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "sustainable",
+"pos": "adj.",
+"definition_en": "able to be maintained at a certain level or rate over the long term without depleting resources",
+"definition_cn": "可持續的；永續的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "unsustainable",
+"pos": "adj.",
+"definition_en": "unable to be maintained indefinitely without causing damage or depletion",
+"definition_cn": "不可持續的；難以為繼的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "relevant",
+"pos": "adj.",
+"definition_en": "closely connected or appropriate to the matter at hand",
+"definition_cn": "相關的；切題的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "irrelevant",
+"pos": "adj.",
+"definition_en": "not connected with or applicable to the matter being considered",
+"definition_cn": "不相關的；離題的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "compatible",
+"pos": "adj.",
+"definition_en": "able to exist or work together without conflict or contradiction",
+"definition_cn": "相容的；可並存的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "incompatible",
+"pos": "adj.",
+"definition_en": "unable to coexist or be used together without conflict",
+"definition_cn": "不相容的；衝突的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "complementary",
+"pos": "adj.",
+"definition_en": "combining in a way that enhances the qualities of each other",
+"definition_cn": "互補的；相輔相成的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "contradictory",
+"pos": "adj.",
+"definition_en": "mutually opposed or inconsistent; containing conflicting elements",
+"definition_cn": "矛盾的；相互衝突的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "intrinsic",
+"pos": "adj.",
+"definition_en": "belonging naturally to something; coming from within rather than external factors",
+"definition_cn": "內在的；本質上的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "extrinsic",
+"pos": "adj.",
+"definition_en": "coming from outside; not inherent to something but dependent on external factors",
+"definition_cn": "外在的；外部的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "simple",
+"pos": "adj.",
+"definition_en": "easily understood or done; not complicated",
+"definition_cn": "簡單的；容易的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "complex",
+"pos": "adj.",
+"definition_en": "consisting of many interconnected parts; difficult to understand or deal with",
+"definition_cn": "複雜的；錯綜的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "manageable",
+"pos": "adj.",
+"definition_en": "able to be controlled, handled, or dealt with without great difficulty",
+"definition_cn": "可處理的；不難應付的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "overwhelming",
+"pos": "adj.",
+"definition_en": "too great or intense to be dealt with; causing a feeling of being unable to cope",
+"definition_cn": "令人不知所措的；壓倒性的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "permanent",
+"pos": "adj.",
+"definition_en": "lasting or remaining without fundamental or marked change indefinitely",
+"definition_cn": "永久的；長期的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "temporary",
+"pos": "adj.",
+"definition_en": "lasting for only a limited period of time; not permanent",
+"definition_cn": "暫時的；短期的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "long-term",
+"pos": "adj.",
+"definition_en": "occurring over or relating to a long period of time",
+"definition_cn": "長期的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "short-term",
+"pos": "adj.",
+"definition_en": "occurring over or relating to a short period of time",
+"definition_cn": "短期的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "advantageous",
+"pos": "adj.",
+"definition_en": "involving or creating favorable circumstances that increase the chance of success",
+"definition_cn": "有利的；佔優勢的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "disadvantageous",
+"pos": "adj.",
+"definition_en": "involving unfavorable circumstances that reduce chances of success",
+"definition_cn": "不利的；處於劣勢的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "beneficial",
+"pos": "adj.",
+"definition_en": "producing good or helpful results; favorable",
+"definition_cn": "有益的；有利的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "harmful",
+"pos": "adj.",
+"definition_en": "causing or likely to cause harm or damage",
+"definition_cn": "有害的；危害的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "valuable",
+"pos": "adj.",
+"definition_en": "worth a great deal in terms of usefulness, importance, or positive qualities",
+"definition_cn": "有價值的；寶貴的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "worthless",
+"pos": "adj.",
+"definition_en": "having no real value, use, or importance",
+"definition_cn": "毫無價值的；無用的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "indispensable",
+"pos": "adj.",
+"definition_en": "absolutely necessary or essential; impossible to do without",
+"definition_cn": "不可或缺的；必要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "redundant",
+"pos": "adj.",
+"definition_en": "no longer needed or useful; superfluous",
+"definition_cn": "多餘的；冗餘的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "practical",
+"pos": "adj.",
+"definition_en": "concerned with actual use or application rather than theory; sensible and realistic",
+"definition_cn": "實際的；可行的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "impractical",
+"pos": "adj.",
+"definition_en": "not adapted for use or action; not sensible or realistic",
+"definition_cn": "不切實際的；不可行的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "feasible",
+"pos": "adj.",
+"definition_en": "possible to do easily or conveniently; likely to succeed",
+"definition_cn": "可行的；實際可做到的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "unfeasible",
+"pos": "adj.",
+"definition_en": "not possible to do or carry out; not practical or achievable",
+"definition_cn": "不可行的；難以實現的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "objective",
+"pos": "adj.",
+"definition_en": "not influenced by personal feelings or opinions; based on facts",
+"definition_cn": "客觀的；公正的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "subjective",
+"pos": "adj.",
+"definition_en": "based on or influenced by personal feelings, tastes, or opinions",
+"definition_cn": "主觀的；個人的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "rational",
+"pos": "adj.",
+"definition_en": "based on or in accordance with reason or logic",
+"definition_cn": "理性的；合理的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "irrational",
+"pos": "adj.",
+"definition_en": "not logical or reasonable; not based on clear thinking",
+"definition_cn": "不理性的；非理性的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "justified",
+"pos": "adj.",
+"definition_en": "having a good reason for something; warranted or defensible",
+"definition_cn": "合理的；站得住腳的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "unjustified",
+"pos": "adj.",
+"definition_en": "not having a good or sound reason; not warranted",
+"definition_cn": "不合理的；無根據的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "controversial",
+"pos": "adj.",
+"definition_en": "giving rise to public disagreement or debate",
+"definition_cn": "有爭議的；引發討論的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "uncontroversial",
+"pos": "adj.",
+"definition_en": "not causing or likely to cause disagreement or debate",
+"definition_cn": "無爭議的；普遍接受的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "prevalent",
+"pos": "adj.",
+"definition_en": "widespread; existing or occurring commonly in a particular area or at a particular time",
+"definition_cn": "普遍的；盛行的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "rare",
+"pos": "adj.",
+"definition_en": "not occurring very often; uncommon",
+"definition_cn": "罕見的；稀有的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "impartial",
+"pos": "adj.",
+"definition_en": "treating all rivals or disputants equally; not partial or biased",
+"definition_cn": "公正的；不偏頗的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "biased",
+"pos": "adj.",
+"definition_en": "showing an unfair tendency to favor one side, group, or view over others",
+"definition_cn": "有偏見的；偏頗的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "worthwhile",
+"pos": "adj.",
+"definition_en": "worth the time, money, or effort spent on it",
+"definition_cn": "值得的；有意義的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "pointless",
+"pos": "adj.",
+"definition_en": "having no purpose or use; serving no meaningful goal",
+"definition_cn": "無意義的；徒勞的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "rewarding",
+"pos": "adj.",
+"definition_en": "providing satisfaction or benefit in return for effort",
+"definition_cn": "有回報的；令人滿足的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "unrewarding",
+"pos": "adj.",
+"definition_en": "not providing satisfaction, benefit, or a sense of achievement",
+"definition_cn": "沒有回報的；令人失望的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "important",
+"pos": "adj.",
+"definition_en": "of great significance or value; likely to have a major effect",
+"definition_cn": "重要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "unimportant",
+"pos": "adj.",
+"definition_en": "lacking significance or value; not deserving attention",
+"definition_cn": "不重要的；無關緊要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "significant",
+"pos": "adj.",
+"definition_en": "sufficiently great or important to be worthy of attention",
+"definition_cn": "顯著的；重要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "insignificant",
+"pos": "adj.",
+"definition_en": "too small or unimportant to be worth consideration",
+"definition_cn": "不顯著的；微不足道的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "crucial",
+"pos": "adj.",
+"definition_en": "decisive or critical, especially in the success or failure of something",
+"definition_cn": "關鍵的；至關重要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "vital",
+"pos": "adj.",
+"definition_en": "absolutely necessary or essential for life or success",
+"definition_cn": "至關重要的；不可缺少的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "dispensable",
+"pos": "adj.",
+"definition_en": "able to be replaced or done without; not essential",
+"definition_cn": "可有可無的；不必要的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "mild",
+"pos": "adj.",
+"definition_en": "not severe, serious, or extreme in degree or effect",
+"definition_cn": "輕微的；溫和的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "severe",
+"pos": "adj.",
+"definition_en": "very great in degree or intensity; causing significant harm or difficulty",
+"definition_cn": "嚴重的；劇烈的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "profound",
+"pos": "adj.",
+"definition_en": "very great or intense in effect; having deep insight or understanding",
+"definition_cn": "深遠的；深刻的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "superficial",
+"pos": "adj.",
+"definition_en": "existing or occurring at or on the surface; lacking depth or substance",
+"definition_cn": "表面的；膚淺的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "advanced",
+"example_sentences": []
+},
+{
+"word": "flexible",
+"pos": "adj.",
+"definition_en": "willing to change or adapt to new conditions; not rigid",
+"definition_cn": "彈性的；靈活的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "beginner",
+"example_sentences": []
+},
+{
+"word": "rigid",
+"pos": "adj.",
+"definition_en": "unable to be changed or adapted; strictly fixed and inflexible",
+"definition_cn": "僵化的；固定的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "structured",
+"pos": "adj.",
+"definition_en": "arranged and organized according to a clear plan or system",
+"definition_cn": "有組織的；有結構的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+},
+{
+"word": "chaotic",
+"pos": "adj.",
+"definition_en": "in a state of complete disorder and confusion",
+"definition_cn": "混亂的；無序的",
+"categories": [
+"General"
+],
+"exam_tags": [],
+"difficulty_level": "intermediate",
+"example_sentences": []
+}
+]
+}
