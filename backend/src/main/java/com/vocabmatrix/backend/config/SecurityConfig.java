@@ -5,6 +5,7 @@ package com.vocabmatrix.backend.config;
 import java.util.Arrays;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -28,6 +29,9 @@ import com.vocabmatrix.backend.oauth.service.OidcLoginService;
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
+
+    @Value("${app.frontend-url}")
+    private String frontendUrl;
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final OidcLoginService oidcLoginService;
@@ -94,7 +98,7 @@ public class SecurityConfig {
                                 .userService(oauth2LoginService)
                         )
                         .successHandler(oAuthLoginSuccessHandler)
-                        .failureUrl("http://localhost:3000/auth/login?error=oauth2_failed")
+                        .failureUrl(frontendUrl + "/auth/login?error=oauth2_failed")
                 )
 
                 // 在執行 LogoutFilter 之前，確保先執行 jwtAuthenticationFilter進行過濾
@@ -104,11 +108,14 @@ public class SecurityConfig {
                 .build();
     }
 
-    // 讓瀏覽器 允許來自 localhost:3000(前端) 的請求
+    // 讓瀏覽器允許來自前端的請求（本地開發 + 正式環境）
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOriginPatterns(Arrays.asList("http://localhost:3000"));
+        configuration.setAllowedOriginPatterns(Arrays.asList(
+                "http://localhost:3000",
+                frontendUrl
+        ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
