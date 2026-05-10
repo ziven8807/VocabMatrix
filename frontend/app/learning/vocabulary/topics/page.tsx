@@ -244,7 +244,7 @@ export default function TopicsVocabularyPage() {
     notebookService
       .getMyNotebooks()
       .then((res) => {
-        const data = res?.data?.content ?? res?.data ?? [];
+        const data = res?.data ?? [];
         setNotebooks(Array.isArray(data) ? data : []);
       })
       .catch(() => {});
