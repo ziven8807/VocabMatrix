@@ -1,4 +1,5 @@
 // frontend/src/app/learning/vocabulary/page.tsx
+
 // 詞彙主入口頁：提供 General 單字與 Topics 單字兩個入口按鈕
 
 "use client";

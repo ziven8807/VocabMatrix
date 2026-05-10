@@ -39,6 +39,8 @@ spring:
       password: ${REDIS_PASSWORD:}
       database: 0               # 使用第 0 號資料庫
       timeout: 5000ms           # 連線逾時設定
+      ssl:
+        enabled: ${REDIS_SSL:false}
   # --- OAuth2 第三方登入設定 ---
   security:
     oauth2:
