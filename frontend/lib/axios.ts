@@ -19,7 +19,7 @@ let failedQueue: RetryQueueItem[] = [];
 
 const processQueue = (
   error: AxiosError | null,
-  token: string | null = null
+  token: string | null = null,
 ) => {
   failedQueue.forEach((prom) => {
     if (error) prom.reject(error);
@@ -30,7 +30,9 @@ const processQueue = (
 
 // 建立 axios 實例
 const api = axios.create({
-  baseURL: `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080"}/api`,
+  baseURL: process.env.NEXT_PUBLIC_API_URL
+    ? `${process.env.NEXT_PUBLIC_API_URL}/api`
+    : "/api",
   withCredentials: true,
   timeout: 10000,
   headers: { "Content-Type": "application/json" },
@@ -45,7 +47,7 @@ api.interceptors.request.use(
     }
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 
 // Response Interceptor
@@ -105,7 +107,7 @@ api.interceptors.response.use(
                   message: "Session expired. Please login again.",
                   type: "warning",
                 },
-              })
+              }),
             );
 
             setTimeout(() => {
@@ -123,7 +125,7 @@ api.interceptors.response.use(
     }
 
     return Promise.reject(error);
-  }
+  },
 );
 
 export default api;
