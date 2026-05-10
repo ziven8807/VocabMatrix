@@ -1,3 +1,5 @@
+// frontend/next.config.ts
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -7,11 +9,6 @@ const nextConfig: NextConfig = {
         source: "/api/:path*",
         destination:
           "https://vocabmatrix-production-c443.up.railway.app/api/:path*",
-      },
-      {
-        source: "/login/:path*",
-        destination:
-          "https://vocabmatrix-production-c443.up.railway.app/login/:path*",
       },
       {
         source: "/oauth2/:path*",
