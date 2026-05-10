@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.vocabmatrix.backend.auth.service.jwt.JwtTokenService;
+import com.vocabmatrix.backend.config.JwtConfig;
 import com.vocabmatrix.backend.oauth.model.AuthenticatedOAuthUser;
 import com.vocabmatrix.backend.user.entity.User;
 import com.vocabmatrix.backend.user.repository.UserRepository;
@@ -34,6 +35,7 @@ public class OAuthLoginSuccessHandler extends SimpleUrlAuthenticationSuccessHand
     private final JwtTokenService jwtTokenService;         // 負責產生 JWT token
     private final AccountLinkingService accountLinkingService; // 負責帳號綁定邏輯
     private final UserRepository userRepository;           // 負責查詢資料庫的使用者
+    private final JwtConfig jwtConfig;                     // 負責讀取 JWT 相關設定
 
     // 從設定檔讀取前端網址（例如 http://localhost:3000）
     @Value("${app.frontend-url}")
@@ -154,13 +156,13 @@ public class OAuthLoginSuccessHandler extends SimpleUrlAuthenticationSuccessHand
         // 產生 refreshToken（長效，放 cookie，前端 JS 看不到）
         String refreshToken = jwtTokenService.generateRefreshToken(user);
 
-        // 把 refreshToken 寫進 httpOnly cookie（有效期 7 天）
+        // 把 refreshToken 寫進 httpOnly cookie，使用 JwtConfig 統一管理設定
         ResponseCookie refreshTokenCookie = ResponseCookie.from("refresh_token", refreshToken)
                 .httpOnly(true)  // 前端 JS 無法讀取，防止 XSS 攻擊
-                .secure(false)   // 本地開發用 false，正式環境要改成 true
+                .secure(jwtConfig.isCookieSecure())   // 從設定檔讀取，正式環境為 true
                 .path("/")
-                .maxAge(7 * 24 * 60 * 60) // 7 天
-                .sameSite("Lax")
+                .maxAge(jwtConfig.getRefreshTokenExpiration()) // 從設定檔讀取有效期
+                .sameSite(jwtConfig.getCookieSameSite())       // 從設定檔讀取 SameSite 設定
                 .build();
         response.addHeader(HttpHeaders.SET_COOKIE, refreshTokenCookie.toString());
 
