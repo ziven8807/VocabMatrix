@@ -1,50 +1,51 @@
+# src/main/resources/application.yml
+
 server:
   forward-headers-strategy: framework
 
 spring:
-  # --- 資料庫連線配置 ---
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/vocab_matrix_test}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
-  # --- 檔案上傳設定 (Servlet 容器級別) ---
+
   servlet:
     multipart:
-      max-file-size: 5MB        # 單一檔案最大 5MB (防止大檔案塞爆磁碟)
-      max-request-size: 5MB     # 單次請求總和最大 5MB
-  # --- JPA / Hibernate 配置 ---
+      max-file-size: 5MB
+      max-request-size: 5MB
+
   jpa:
     hibernate:
-      ddl-auto: none            # 不讓 Hibernate 自動修改資料庫結構 (生產環境必備，手動管 SQL)
-    show-sql: true              # 在控制台列印出執行的 SQL 語句 (除錯好用)
+      ddl-auto: none
+    show-sql: true
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect # 指定資料庫方言為 PostgreSQL
-  # --- 郵件發送配置 (用於驗證信、重置密碼) ---
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
   mail:
     host: smtp.gmail.com
     port: 587
     username: ${MAIL_USERNAME}
-    password: ${MAIL_PASSWORD}  # 這是 Gmail 的「應用程式密碼」
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
-          auth: true            # 開啟身分驗證
+          auth: true
           starttls:
-            enable: true        # 開啟 TLS 加密傳輸
+            enable: true
             required: true
-  # --- Redis 快取配置 (用於儲存 Token 或臨時資料) ---
+
   data:
     redis:
       host: ${REDIS_HOST:localhost}
       port: ${REDIS_PORT:6379}
       password: ${REDIS_PASSWORD:}
-      database: 0               # 使用第 0 號資料庫
-      timeout: 5000ms           # 連線逾時設定
+      database: 0
+      timeout: 5000ms
       ssl:
         enabled: ${REDIS_SSL:false}
-  # --- OAuth2 第三方登入設定 ---
+
   security:
     oauth2:
       client:
@@ -53,9 +54,9 @@ spring:
             client-id: ${GOOGLE_CLIENT_ID}
             client-secret: ${GOOGLE_CLIENT_SECRET}
             scope:
-              - openid          # 必備，用於標示為 OIDC
-              - email           # 讀取 Email
-              - profile         # 讀取基本資料(姓名、圖片)
+              - openid
+              - email
+              - profile
             client-name: Google
           facebook:
             client-id: ${FACEBOOK_CLIENT_ID}
@@ -64,41 +65,39 @@ spring:
               - email
               - public_profile
             client-name: Facebook
-# --- 檔案存儲自定義配置 (對應 FileStorageConfig.java) ---
+
 file:
   upload:
-    dir: uploads/avatars/      # 實體檔案存放在專案根目錄的路徑
-# --- JWT 安全安全性配置 (自定義) ---
+    dir: uploads/avatars/
+
 security:
   jwt:
-    # 簽名金鑰 (HS256 演算法使用)
     access-secret: ${JWT_ACCESS_SECRET}
     refresh-secret: ${JWT_REFRESH_SECRET}
-    # Token 有效期設定
-    access-token-expiration: 30m   # 短效 Access Token (30分鐘)
-    refresh-token-expiration: 30d  # 長效 Refresh Token (30天)
-    # JWT 標準欄位設定 (用於驗證 Token 來源)
+    access-token-expiration: 30m
+    refresh-token-expiration: 30d
     issuer: "vocabmatrix-backend-service"
     access-audience: "vocabmatrix-api"
     refresh-audience: "vocabmatrix-auth"
-    # Cookie 相關設定 (用於儲存 Refresh Token)
     refresh-token-cookie-name: "refresh_token"
     refresh-token-cookie-path: "/"
-    cookie-secure: ${COOKIE_SECURE:false}  # 開發環境(http)設為 false，正式環境(https)需設為 true
-    cookie-same-site: "Lax"     # 防止 CSRF 攻擊的設定
-# --- 日誌層級配置 ---
+    cookie-secure: ${COOKIE_SECURE:false}
+    # ↓↓↓ 關鍵修改：從 Lax 改成 None
+    # Lax  → 只允許 same-site 請求帶 cookie（本地 localhost 沒問題，但跨域會被擋）
+    # None → 允許跨域請求帶 cookie（Railway 前後端不同 subdomain 時必須用這個）
+    # 注意：SameSite=None 必須搭配 cookie-secure: true，否則瀏覽器會拒絕
+    cookie-same-site: "None"
+
 logging:
   level:
-    org.springframework.security: DEBUG # 顯示 Security 相關日誌 (除錯 OAuth2 超級好用)
+    org.springframework.security: DEBUG
     com.vocabmatrix.backend.config: DEBUG
     com.vocabmatrix.backend.auth.filter: DEBUG
-# --- VocabMatrix 應用程式自定義業務配置 ---
+
 app:
   backend-url: ${APP_BACKEND_URL:http://localhost:8080}
   frontend-url: ${APP_FRONTEND_URL:http://localhost:3000}
-  # Email 驗證連結有效期
   email-verification:
     token-validity-hours: 1
-  # 密碼重置連結有效期
   password-reset:
     token-validity-hours: 1
