@@ -4,7 +4,6 @@ package com.vocabmatrix.backend.common.mail;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.scheduling.annotation.Async;
@@ -21,12 +20,9 @@ public class MailService {
 
     private final JavaMailSender mailSender;
 
-    // 從 application.yml 讀取發件人地址，若沒設定則預設為 Resend 的測試地址
-    @Value("${spring.mail.from:onboarding@resend.dev}")
-    private String fromEmail;
-
     /**
      * 異步發送簡單郵件。
+     * 這是底層的通用發送方法，所有需要發送郵件的業務邏輯都應呼叫此方法。
      *
      * @param to 收件人 email
      * @param subject 郵件主旨
@@ -37,18 +33,20 @@ public class MailService {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
 
-            // 必須設定 From，否則 Resend 會拒絕發送
-            message.setFrom(fromEmail);
+            // 寄件人必須明確設定，否則 Resend 會拒絕
+            // onboarding@resend.dev 是 Resend 提供的預設 domain，不需要額外驗證
+            // 未來如果有自己的 domain（例如 vocabmatrix.com），可以換成 noreply@vocabmatrix.com
+            message.setFrom("onboarding@resend.dev");
+
             message.setTo(to);
             message.setSubject(subject);
             message.setText(content);
 
-            log.info("Attempting to send email from {} to {}", fromEmail, to);
             mailSender.send(message);
             log.info("Async email sent successfully to: {}", to);
         } catch (Exception e) {
             log.error("Failed to send email to {}: {}", to, e.getMessage());
-            // 異步執行緒中的例外不應中斷主交易
+            // 異步執行緒中的例外不應中斷主交易，僅記錄錯誤
         }
     }
 }
