@@ -26,19 +26,7 @@ spring:
   # 改用 Resend 服務，走 HTTPS API 發信，Railway 不會封鎖，穩定可靠
   # 使用方式：去 resend.com 註冊取得 API Key，填入 Railway 環境變數 MAIL_PASSWORD
   mail:
-    host: smtp.resend.com       # Resend 的 SMTP server
-    port: 465                   # SSL port，Railway 不會封鎖
-    username: resend            # Resend SMTP 固定帳號，就是 "resend" 這個字串，不需要改
-    password: ${MAIL_PASSWORD}  # Railway 環境變數填入 Resend API Key（格式：re_xxxxxxxx）
-    properties:
-      mail:
-        smtp:
-          auth: true            # 開啟身分驗證
-          ssl:
-            enable: true        # port 465 使用 SSL 加密
-          starttls:
-            enable: false       # port 465 + SSL 不需要 STARTTLS，關掉避免衝突
-            required: false
+    password: ${MAIL_PASSWORD}  # Resend API Key
   # --- Redis 快取配置 (用於儲存 Token 或臨時資料) ---
   data:
     redis:
