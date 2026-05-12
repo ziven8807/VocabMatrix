@@ -2,6 +2,11 @@ server:
   forward-headers-strategy: framework
 
 spring:
+  # --- 自動配置排除 ---
+  # 因為改用 Resend HTTP API 發信，不再需要 Spring Mail 的 SMTP 自動配置
+  # 不排除的話 Spring Boot 啟動時會因為找不到 host 設定而報錯
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mail.MailSenderAutoConfiguration
   # --- 資料庫連線配置 ---
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/vocab_matrix_test}
@@ -22,11 +27,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect # 指定資料庫方言為 PostgreSQL
   # --- 郵件發送配置 ---
-  # 原本使用 Gmail SMTP (port 587)，但 Railway 平台會封鎖對外 SMTP 連線導致寄信失敗
-  # 改用 Resend 服務，走 HTTPS API 發信，Railway 不會封鎖，穩定可靠
-  # 使用方式：去 resend.com 註冊取得 API Key，填入 Railway 環境變數 MAIL_PASSWORD
+  # 原本使用 Gmail SMTP (port 587)，但 Railway 平台封鎖所有對外 SMTP port 導致寄信失敗
+  # 改用 Resend HTTP API 發信，走 HTTPS，Railway 不會封鎖
+  # MailService.java 會直接讀取此 API Key 打 https://api.resend.com/emails
   mail:
-    password: ${MAIL_PASSWORD}  # Resend API Key
+    password: ${MAIL_PASSWORD}  # Railway 環境變數填入 Resend API Key（格式：re_xxxxxxxx）
   # --- Redis 快取配置 (用於儲存 Token 或臨時資料) ---
   data:
     redis:
