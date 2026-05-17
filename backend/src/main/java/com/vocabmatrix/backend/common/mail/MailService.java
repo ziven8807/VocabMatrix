@@ -42,7 +42,7 @@ public class MailService {
         try {
             // 組裝 Resend API 需要的請求體
             ResendEmailRequest requestBody = new ResendEmailRequest(
-                    "onboarding@resend.dev", // 寄件人：Resend 提供的預設 domain，不需要驗證
+                    "noreply@vocabmatrix.com", // 寄件人：Resend 提供的預設 domain，不需要驗證
                     List.of(to),             // 收件人：包成 List，Resend API 格式要求
                     subject,
                     content
