@@ -5,18 +5,8 @@
 import React, { useState, useEffect } from "react";
 import { userService } from "@/services/userService";
 import { useAuth } from "@/hooks/useAuth";
+import { getFullAvatarUrl } from "@/lib/avatar";
 import type { ProfileUpdateDTO } from "@/types/user.dto";
-
-// 環境變數
-const BACKEND_URL =
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8080";
-
-// 將相對路徑轉換為完整 URL
-const getFullAvatarUrl = (avatarUrl: string | null): string => {
-  if (!avatarUrl) return "";
-  if (avatarUrl.startsWith("http")) return avatarUrl;
-  return `${BACKEND_URL}${avatarUrl.startsWith("/") ? "" : "/"}${avatarUrl}`;
-};
 
 // 國家列表 ISO 3166
 const countries = [
@@ -203,8 +193,9 @@ const ProfilePage = () => {
         bio: user.bio || "",
       });
 
+      // 改用共用的 getFullAvatarUrl，傳入整個 user 物件
       if (user.avatarUrl) {
-        setAvatarPreview(getFullAvatarUrl(user.avatarUrl));
+        setAvatarPreview(getFullAvatarUrl(user));
       }
       setTimeout(() => setIsLoaded(true), 300);
     }
@@ -272,14 +263,15 @@ const ProfilePage = () => {
         ...user,
         nickname: formData.nickname,
         avatarUrl: finalAvatarUrl,
-        // 如果有其他欄位在 User interface 裡也要補上
       });
 
       setSuccessMessage("Profile saved successfully!");
       setSelectedFile(null);
 
-      // 更新預覽為正式 URL (移除 base64)
-      setAvatarPreview(getFullAvatarUrl(finalAvatarUrl));
+      // 更新預覽為正式 URL（改用共用的 getFullAvatarUrl，傳入更新後的 user 物件）
+      setAvatarPreview(
+        getFullAvatarUrl({ ...user, avatarUrl: finalAvatarUrl }),
+      );
 
       setTimeout(() => setSuccessMessage(""), 3000);
     } catch (error) {
