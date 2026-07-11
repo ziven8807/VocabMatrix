@@ -3,7 +3,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // 1. 取得 Cookie (由後端發送，httpOnly 應為 false 才能讀取)
   const isLoggedIn = request.cookies.get("isLoggedIn")?.value;
   const hasPassword = request.cookies.get("hasPassword")?.value;
