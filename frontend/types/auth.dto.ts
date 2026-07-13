@@ -17,6 +17,7 @@ export interface UserResponseDTO {
   avatarUrl: string;
   status: string;
   emailVerified: boolean;
+  hasPassword: boolean;
   createdAt: string;
 }
 

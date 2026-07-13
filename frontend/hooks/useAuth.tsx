@@ -21,6 +21,7 @@ export interface User {
   countryCode?: string;
   linkedinUrl?: string;
   bio?: string;
+  hasPassword: boolean; // 是否設有密碼
 }
 
 //  2. 定義 Context 的型別，包含新增的 updateUser
@@ -29,10 +30,25 @@ interface AuthContextType {
   isLoading: boolean;
   login: (userData: User, token: string) => void;
   logout: () => void;
-  updateUser: (userData: User) => void; // 新增此函式以供 Profile 頁面呼叫
+  updateUser: (userData: User) => void; // 供 Profile 頁面呼叫
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
+
+// 統一管理 isLoggedIn / hasPassword 兩個 cookie 的寫入
+function setAuthCookies(userData: User) {
+  Cookies.set("isLoggedIn", "true", { expires: 7, sameSite: "lax" });
+  Cookies.set("hasPassword", userData.hasPassword ? "true" : "false", {
+    expires: 7,
+    sameSite: "lax",
+  });
+}
+
+// 統一管理 cookie 的清除
+function clearAuthCookies() {
+  Cookies.remove("isLoggedIn");
+  Cookies.remove("hasPassword");
+}
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -62,13 +78,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
         // 緩存到 localStorage 以減少閃爍
         localStorage.setItem("user_cache", JSON.stringify(userData));
-        Cookies.set("isLoggedIn", "true", { expires: 7, sameSite: "lax" });
+
+        // 統一函式設置 isLoggedIn + hasPassword
+        setAuthCookies(userData);
       }
     } catch (error) {
       tokenManager.clearToken();
       setUser(null);
       localStorage.removeItem("user_cache");
-      Cookies.remove("isLoggedIn");
+
+      // 改用統一函式清除
+      clearAuthCookies();
     } finally {
       setIsLoading(false);
     }
@@ -91,7 +111,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     tokenManager.setToken(token);
     setUser(userData);
     localStorage.setItem("user_cache", JSON.stringify(userData));
-    Cookies.set("isLoggedIn", "true", { expires: 7, sameSite: "lax" });
+
+    // 改用統一函式設置 isLoggedIn + hasPassword
+    setAuthCookies(userData);
   };
 
   /**
@@ -101,6 +123,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const updateUser = (userData: User) => {
     setUser(userData);
     localStorage.setItem("user_cache", JSON.stringify(userData));
+
+    // ★ 新增：若 hasPassword 狀態有變，同步更新 cookie
+    Cookies.set("hasPassword", userData.hasPassword ? "true" : "false", {
+      expires: 7,
+      sameSite: "lax",
+    });
   };
 
   /**
@@ -115,7 +143,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       tokenManager.clearToken();
       setUser(null);
       localStorage.removeItem("user_cache");
-      Cookies.remove("isLoggedIn");
+
+      // 改用統一函式清除
+      clearAuthCookies();
       window.location.href = "/";
     }
   };

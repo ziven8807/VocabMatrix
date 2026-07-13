@@ -29,6 +29,9 @@ public class UserResponseDTO {
     private String status;         // 回傳 "ACTIVE", "INACTIVE", "PENDING_DELETE"
     private Boolean emailVerified;
 
+    // ★ 是否設有密碼（本地帳號 or 已設定密碼的第三方帳號為 true，純 OAuth2 帳號為 false）
+    private Boolean hasPassword;
+
     // 時間審計
     private OffsetDateTime lastLoginAt;
     private OffsetDateTime createdAt;
@@ -52,6 +55,7 @@ public class UserResponseDTO {
                 .isAdmin(user.getIsAdmin())
                 .status(user.getStatus().name())
                 .emailVerified(user.getEmailVerified())
+                .hasPassword(user.getPasswordHash() != null)
                 .lastLoginAt(user.getLastLoginAt())
                 .createdAt(user.getCreatedAt())
                 .updatedAt(user.getUpdatedAt())

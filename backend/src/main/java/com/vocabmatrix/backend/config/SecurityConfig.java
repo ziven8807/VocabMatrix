@@ -65,9 +65,7 @@ public class SecurityConfig {
                                 "/api/auth/**",
                                 "/api/otp/**",
                                 "/api/oauth2/**",
-                                "/login/oauth2/**",
-                                "/uploads/**",
-                                "/api/uploads/**"
+                                "/login/oauth2/**"
                         ).permitAll()
 
                         // 公開所有 /api/vocabulary/ 下的路徑
@@ -75,6 +73,13 @@ public class SecurityConfig {
 
                         // 排行榜公開，未登入也能看
                         .requestMatchers("/api/contest/leaderboard/**").permitAll()
+
+                        // Swagger
+                        .requestMatchers(
+                                "/swagger-ui.html",
+                                "/swagger-ui/**",
+                                "/v3/api-docs/**"
+                        ).permitAll()
 
                         // 除了上面permitAll() 裡的端點之外，其他所有請求都必須登入才能存取
                         .anyRequest().authenticated()

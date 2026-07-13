@@ -1,4 +1,4 @@
-// frontend/middleware.ts
+// frontend/proxy.ts
 
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
