@@ -41,7 +41,7 @@ public class PasswordController {
      */
     @PostMapping("/password/change")
     public ResponseEntity<Void> changePassword(
-            @AuthenticationPrincipal Long userId,
+            @AuthenticationPrincipal(expression = "id") Long userId,
             @Valid @RequestBody PasswordChangeRequestDTO dto) {
 
         log.info("User ID {} is attempting to change password.", userId);
