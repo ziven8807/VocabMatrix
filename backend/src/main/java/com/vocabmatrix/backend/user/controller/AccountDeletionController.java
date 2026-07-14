@@ -31,7 +31,7 @@ public class AccountDeletionController {
      */
     @PostMapping("/delete-request")
     public ResponseEntity<Void> requestDeletion(
-            @AuthenticationPrincipal Long userId,
+            @AuthenticationPrincipal(expression = "id") Long userId,
             @Valid @RequestBody DeleteAccountRequestDTO dto,
             HttpServletRequest request) {
 
@@ -52,7 +52,7 @@ public class AccountDeletionController {
      */
     @PostMapping("/cancel-deletion")
     public ResponseEntity<Void> cancelDeletion(
-            @AuthenticationPrincipal Long userId,
+            @AuthenticationPrincipal(expression = "id") Long userId,
             HttpServletRequest request) {
 
         String ipAddress = request.getRemoteAddr();
